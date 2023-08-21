@@ -21,6 +21,10 @@ export async function GET({ params }) {
   data = {
     name: data.name,
     tag: data.tag,
+    nameColor: data.nameColor,
+    icon: {
+      id: data.icon.id,
+    },
     trophies: data.trophies,
     highestTrophies: data.highestTrophies,
     highestPowerPlayPoints: data.highestPowerPlayPoints,

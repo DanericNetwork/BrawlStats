@@ -99,7 +99,6 @@ h1, h2, h3, h4, h5, h6, p {
     border-radius: 5px;
     padding: 0px 10px;
     width: 300px;
-    height: 200px;
     transition: all 0.3s ease-in-out;
     border: 2px solid #F7E987;
 }
@@ -130,4 +129,26 @@ h1, h2, h3, h4, h5, h6, p {
 .brawler-card-header-rank p {
     font-size: 20px;
     font-weight: 500;
+}
+
+.wins {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.wins-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #252B48;
+    border-radius: 5px;
+    padding: 0px 10px;
+    gap: 10px;
+}
+
+.wins-card img {
+    width: 30px;
 }

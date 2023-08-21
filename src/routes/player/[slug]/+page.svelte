@@ -53,6 +53,20 @@
                     <p><img class="trophies" src="/assets/icon_trophy_medium.png" alt="trophies">{playerData.trophies}</p>
                 </div>
             </div>
+            <div class="wins">
+                <div class="wins-card">
+                    <img src="/assets/gamemodes/3v3.png" alt="3v3">
+                    <p>{playerData["3vs3Victories"]}</p>
+                </div>
+                <div class="wins-card">
+                    <img src="/assets/gamemodes/Showdown.png" alt="Showdown">
+                    <p>{playerData.soloVictories}</p>
+                </div>
+                <div class="wins-card">
+                    <img src="/assets/gamemodes/Duo-Showdown.png" alt="DuoShowdown">
+                    <p>{playerData.duoVictories}</p>
+                </div>
+            </div>
             <div class="brawler-container">
                 <h2>Brawlers</h2>
                 <div class="brawlers-list">

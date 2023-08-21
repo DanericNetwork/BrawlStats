@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="brawler-container">
-                <h2>Brawlers</h2>
+                <h2>Brawlers ({playerData.brawlers.length}/70)</h2>
                 <div class="brawlers-list">
                     {#each sortBrawlersByTrophies(playerData.brawlers) as brawler}
                         <div class="brawler-card">

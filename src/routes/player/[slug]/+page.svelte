@@ -26,7 +26,7 @@
         }
     }
 
-    function sortBrawlersByTrophies(brawlers: any[]) {
+    function sortBrawlersByTrophies(brawlers: BrawlerProps[]) {
         return brawlers.slice().sort((a, b) => b.trophies - a.trophies);
     }
 </script>

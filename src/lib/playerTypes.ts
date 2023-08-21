@@ -1,6 +1,10 @@
 export type Player = {
     name: string,
     tag: string,
+    nameColor: string,
+    icon: {
+        id: number,
+    },
     trophies: number,
     highestTrophies: number,
     highestPowerPlayPoints: number,

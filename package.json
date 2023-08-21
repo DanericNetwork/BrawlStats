@@ -21,7 +21,6 @@
 	"type": "module",
 	"dependencies": {
 		"16": "^0.0.2",
-		"@esbuild/darwin-arm64": "^0.19.2",
 		"esbuild": "^0.19.2"
 	}
 }

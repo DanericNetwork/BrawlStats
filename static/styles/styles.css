@@ -11,6 +11,10 @@ body {
     color: #e8e8e8;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 button {
     font-family: 'Outfit', sans-serif;
     border: none;
@@ -54,4 +58,40 @@ button:active {
     letter-spacing: 1px;
     border: 1px solid #e8e8e8;
     color: #e8e8e8;
+}
+
+.data-card {
+    background: #292929;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px #000;
+    width: 200px;
+}
+
+.data-row .data {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title-row {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.title-row img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.title-row h1 {
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.data-row img {
+    width: 25px;
 }

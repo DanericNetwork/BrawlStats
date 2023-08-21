@@ -27,13 +27,17 @@
   </div>
   <button on:click={fetchData}>Fetch Data</button>
 
-  <h1>Player Data:</h1>
-  <pre>{JSON.stringify(playerData, null, 2)}</pre>
-
-  <h1>Name:</h1>
   {#if playerData}
+    <h1>Name:</h1>
+    <div class="data-card">
+      <div class="title-row">
+        <img src="/assets/icon_trophy_medium.png" alt="Trophy" />
+        <h1 class="title">Trophies</h1>
+      </div>
+      <p>{playerData.trophies}</p>
+    </div>
     <h1>{playerData.name}</h1>
   {:else}
-    <h1>Loading...</h1>
+    <h1>Please enter a player tag!</h1>
   {/if}
 </main>

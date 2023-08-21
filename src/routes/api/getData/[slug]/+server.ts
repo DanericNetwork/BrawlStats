@@ -1,6 +1,6 @@
 import { json } from '@sveltejs/kit'
 import { BRAWL_API_KEY } from '$env/static/private'
-import type { Player } from "$lib/playerTypes";
+import type { Player, BrawlerProps } from "$lib/playerTypes";
 
 export async function GET({ params }) {
   let playerTag = params.slug
@@ -23,6 +23,41 @@ export async function GET({ params }) {
     tag: data.tag,
     trophies: data.trophies,
     highestTrophies: data.highestTrophies,
+    highestPowerPlayPoints: data.highestPowerPlayPoints,
+    expLevel: data.expLevel,
+    expPoints: data.expPoints,
+    isQualifiedFromChampionshipChallenge: data.isQualifiedFromChampionshipChallenge,
+    '3vs3Victories': data['3vs3Victories'],
+    soloVictories: data.soloVictories,
+    duoVictories: data.duoVictories,
+    bestRoboRumbleTime: data.bestRoboRumbleTime,
+    bestTimeAsBigBrawler: data.bestTimeAsBigBrawler,
+    club: {
+      tag: data.club.tag,
+      name: data.club.name,
+    },
+    brawlers: data.brawlers.map((brawler: BrawlerProps) => {
+      return {
+        id: brawler.id,
+        name: brawler.name,
+        power: brawler.power,
+        rank: brawler.rank,
+        trophies: brawler.trophies,
+        highestTrophies: brawler.highestTrophies,
+        starPowers: brawler.starPowers.map((starPower) => {
+          return {
+            id: starPower.id,
+            name: starPower.name,
+          }
+        }),
+        gadgets: brawler.gadgets.map((gadget) => {
+          return {
+            id: gadget.id,
+            name: gadget.name,
+          }
+        }),
+      }
+    }),
   }
 
   return json(data)

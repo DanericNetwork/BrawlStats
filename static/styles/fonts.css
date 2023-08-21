@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'brawl';
+    src: url('/fonts/LilitaOne-Regular.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'brawl';
+    background: #212121;
+    color: #e8e8e8;
+}
+
+button {
+    font-family: 'Outfit', sans-serif;
+    border: none;
+    outline: 1px dotted rgb(37, 37, 37);
+    outline-offset: -4px;
+    background: hsl(0deg 0% 75%);
+    box-shadow: inset -1px -1px #292929, inset 1px 1px #fff, inset -2px -2px rgb(158, 158, 158), inset 2px 2px #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 30px;
+}
+
+button:active {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #292929, inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
+}
+
+.inputBox {
+    position: relative;
+    font-family: 'Outfit', sans-serif;
+}
+
+.inputBox input {
+    padding: 15px 20px;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+    color: #e8e8e8;
+    border: 1px solid#e8e8e8;
+    font-size: 1em;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    font-size: 0.7em;
+    transform: translateX(14px) translateY(-7.5px);
+    padding: 0 6px 1px 5px;
+    border-radius: 2px;
+    background: #212121;
+    letter-spacing: 1px;
+    border: 1px solid #e8e8e8;
+    color: #e8e8e8;
+}

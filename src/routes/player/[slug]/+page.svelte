@@ -42,6 +42,7 @@
                         {playerData.name}
                     </h2>
                     <p>{playerData.tag}</p>
+                    <p><img class="trophies" src="/assets/icon_trophy_medium.png" alt="trophies">{playerData.trophies}</p>
                 </div>
             </div>
             <div class="brawler-container">

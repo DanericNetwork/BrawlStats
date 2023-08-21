@@ -25,6 +25,10 @@
             console.error("Error fetching data:", error);
         }
     }
+
+    function sortBrawlersByTrophies(brawlers: any[]) {
+        return brawlers.slice().sort((a, b) => b.trophies - a.trophies);
+    }
 </script>
 
 <main>
@@ -48,7 +52,7 @@
             <div class="brawler-container">
                 <h2>Brawlers</h2>
                 <div class="brawlers-list">
-                    {#each playerData.brawlers as brawler}
+                    {#each sortBrawlersByTrophies(playerData.brawlers) as brawler}
                         <div class="brawler-card">
                             <div class="brawler-card-header">
                                 <div class="brawler-card-header-rank">

@@ -31,6 +31,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>{playerData ? playerData.name + " | BrawlStatis" : "Loading... | BrawlStatis"}</title>
+</svelte:head>
+
 <main>
     <div class="container">
         {#if playerData}
